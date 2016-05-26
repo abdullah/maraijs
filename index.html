@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Mara Js.</title>
-		<link href="bootstrap.min.css" rel="stylesheet">
+		<link href="lib/vendor/bootstrap.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -15,10 +15,10 @@
 		.container{
 			margin-top: 50px;
 		}
-		.coldiv{
+		.rndColumn{
 			margin-bottom: 15px;
 		}
-		.coldivic{
+		.inner{
 			height: 300px;
 			background-color: #555;
 		}
@@ -26,67 +26,49 @@
 	<body>
 			
 		<div class="container">
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
-			<div class="coldiv">
-				<div class="coldivic">
-					
-				</div>
+			<div class="rndColumn">
+				<div class="inner"></div>
 			</div>
 		</div>
 		
 		<!-- jQuery -->
-		<script src="jquery.js"></script>
+		<script src="lib/vendor/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
-		<script src="bootstrap.min.js"></script>
-		<script src="mara.js"></script>
+		<script src="lib/vendor/bootstrap.min.js"></script>
+		<script src="lib/mara.js"></script>
 		<script>
 			jQuery(document).ready(function($) {
 
 			/*
+			* Default option.
+			*
 			$('obje').diz({
 					bas : 4 ,
 					son : 3 ,
@@ -104,11 +86,13 @@
 			});
 			*/
 
-			
 
-			$('.coldiv').diz({
+			$('.rndColumn').diz({
 				interv : true,
-				animasyon : true
+				animasyon : true,
+				intervalHiz : 700,
+				intervLimit : 100,
+
 			});
 
 			});
